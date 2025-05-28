@@ -15,11 +15,13 @@ title: 简历
 - 微信：zhaohankun666666
 - 学校：**中科大**（2024级少院人工智能方向）
 
+<br>
 ## 奖项
 
 
   - 全国中学生数学竞赛银牌
 
+<br>
 ## 技术技能
 
 ### 编程语言
@@ -33,7 +35,7 @@ title: 简历
 - 深度学习：pytorch
 - 数据库：mysql
 - 开发环境：vscode，jupyter notebook
-
+<br>
 ## 项目经验
 
 ### whose USTC（双人合作）
