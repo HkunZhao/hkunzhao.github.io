@@ -36,21 +36,19 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About Me
+  - title: 主页
     url: /
-  - title: Publications
-    url: /publications/
-  - title: Awards
-    url: /awards/
-  - title: Hobbies
+  - title: 简历
+    url: /cv/
+  - title: 兴趣
     url: /hobbies/
   # - title: Startups
     # url: /startups/
-  - title: Blogs
+  - title: 博客
     url: /blogs/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: China/Beijing
+timezone: China/Anhui/Hefei
 future: true
 highlighter: rouge
 # markdown: kramdown
