@@ -5,6 +5,8 @@ title: 简历
 ---
 
 # 简历
+
+
 ## 基本信息
 
 - 姓名：**赵瀚焜**
@@ -20,19 +22,29 @@ title: 简历
     - 山大附中
     - 中国科学技术大学（2024级，人工智能）
 
+
+
 ## 奖项
 - 高中时期
     - 全国中学生数学竞赛银牌
 
+
+
 ## 技术技能
+
+
 ### 编程语言
 熟练使用：python，c++
 熟悉阅读：html，css，js，latex，markdown
+
+
 ### 工具
 - 数据处理：pandas，numpy，matplotlib，seaborn
 - 深度学习：pytorch
 - 数据库：mysql
 - 开发环境：vscode，jupyter notebook
+
+
 
 ## 项目经验
 ### whose USTC（双人合作）
