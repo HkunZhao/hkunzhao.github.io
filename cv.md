@@ -4,50 +4,43 @@ permalink: /cv/index.html
 title: 简历
 ---
 
-# Hobbies
+# 简历
+## 基本信息
 
-This page hasn’t been updated for a long time. Over the past year, I’ve remained passionate about swimming, but the lack of convenient and decent swimming pools in Cambridge has been an inconvenience. As a result, I’ve been swimming less frequently and have gained some weight. If you’re also in Cambridge and interested in swimming, running, or hiking together, feel free to contact me!
+- 姓名：**赵瀚焜**
+- 出生年月：**2007 年 9 月 6 日**
+- 联系方式：
+- 联系方式：
+  - 邮箱EMAIL  - 邮箱：3345455788@qq.com
+  - 电话：15735185399
+  - 微信：zhaohankun666666
+- 教育背景：
+  - 建设路小学
+  - 师院中学
+  - 山大附中
+  - 中国科学技术大学（2024级，人工智能）
 
-## Swimming & Surfing
+## 奖项
+- 高中时期
+  - 全国中学生数学竞赛银牌
 
-<div class="third">
-<img src="/images/swimming2.JPG">
-<img src="/images/swimming.JPG">
-<img src="/images/surfing1.JPG">
-</div>
-<br>Swimming removes my worries, refreshes my body, and brings me courage to address any challenges. I extremely enjoy the feeling of being immersed in the water. Besides, I am a member of the Swimming Team at Fuzhou University, where I meet many sincere friends. I have reached **China National Second-level athlete Standard** in 50m breaststroke and won **Five Gold Medals** during my 15-year swimming career. Recently, I am also keen on surfing.
+## 技术技能
+### 编程语言
+熟练使用：python，c++
+熟悉阅读：html，css，js，latex，markdown
+### 工具
+- 数据处理：pandas，numpy，matplotlib，seaborn
+- 深度学习：pytorch
+- 数据库：mysql
+- 开发环境：vscode，jupyter notebook
 
-## Workshop
-
-<div class="third">
-<img src="/images/prelection1.JPG">
-<img src="/images/speech1.JPG">
-<img src="/images/speech3.JPG">
-</div>
-<br>There must be something truly magical about standing on stage to give a fantastic speech, which considerably lifts my spirits and energizes my entire body. If you desire to master a specific knowledge in depth, just give a prelection. If you can explain to others for complete understanding, you are already an expert. I really enjoy the accomplishment of imparting my knowledge to others, so what I strive for is to be **a student's favorite professor** at the [best universities in my hometown].
-
-[best universities in my hometown]:https://www.fzu.edu.cn/
-
-
-## Past Hobbies
-
-I previously enjoyed long-distance running, [vlog making](https://space.bilibili.com/594030035), and computer game developing/playing. However, I have no time to do any of these things recently.
-
-## My Cat
-
-She is my love. Her name is Qbao (Q宝).
-
-<div>
-<img src="/images/cat.JPG">
-</div>
-<br>
-
-## Chat with me
-
-**Jan 2023:** I have set up the [online-coffee-time](https://calendly.com/lancecai/meet-with-lance) (Inspired by [Shangzhe Wu](https://elliottwu.com/)). Welcome to chat with me!
-
-<!-- Calendly inline widget begin -->
-
-<div class="calendly-inline-widget" data-url="https://calendly.com/lancecai/meet-with-lance" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+## 项目经验
+### whose USTC（双人合作）
+“Whose USTC”卡牌对战游戏<br>
+在 C++中实现了账户系统和卡牌进化算法<br>
+开发了具有技能效果的回合制战斗系统<br>
+创建了支持多用户的匹配系统
+### qqrobot 螺丝咕姆（单人）
+基于 python 的 qq 机器人<br>
+分别完成了基于svm，lstm，bert微调,deepseek api的四个版本的语言分类机器人<br>
+独立完成了数据库，服务器，训练等的工作<br>
