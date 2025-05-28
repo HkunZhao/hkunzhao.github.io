@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
-# 主页
+# HI！
 
-**这里是赵瀚焜的主页**
+# Welcome to My Digital Home！
+
+ai爱好者 |
