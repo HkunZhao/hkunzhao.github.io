@@ -27,7 +27,7 @@ title: 简历
 
 ### 编程语言
 
-熟练使用：python，c++<br>
+熟练使用：python，c++, linux<br>
 熟悉阅读：html，css，js，latex，markdown
 
 ### 工具
