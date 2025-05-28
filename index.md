@@ -22,8 +22,8 @@ ai爱好者    |    艺术欣赏者    |     爱好广泛
 
 # 导航
 
-[我的简历](hkunzhao.github.io\cv\)
+[我的简历](\cv\)
 
-[技能树](hkunzhao.github.io\hobbies\)
+[技能树](\hobbies\)
 
-[日志记录](hkunzhao.github.io\blogs/)
+[日志记录](\blogs\)
