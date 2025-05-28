@@ -35,7 +35,9 @@ title: 简历
 - 深度学习：pytorch
 - 数据库：mysql
 - 开发环境：vscode，jupyter notebook
+
 <br>
+
 ## 项目经验
 
 ### whose USTC（双人合作）
