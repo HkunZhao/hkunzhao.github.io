@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>我的独立网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mindmap-tree" id="skilltree"></div>
+    <script>
+    // 技能树数据
+    const skillTree = {
+        text: "技能树",
+        main: true,
+        children: [
+            {
+                text: "人",
+                children: [
+                    { text: "书单" }
+                ]
+            },
+            {
+                text: "艺",
+                children: [
+                    { text: "看番" },
+                    { text: "小说" },
+                    { text: "剧情游戏" }
+                ]
+            },
+            {
+                text: "技",
+                children: [
+                    { text: "动作类游戏", score: 85 },
+                    { text: "音游", score: 70 },
+                    { text: "信息检索", score: 90 },
+                    {
+                        text: "体育类",
+                        children: [
+                            { text: "乒乓球", score: 60 },
+                            { text: "羽毛球", score: 70 },
+                            { text: "空竹", score: 40 },
+                            { text: "呼啦圈", score: 50 },
+                            { text: "足球", score: 20 }
+                        ]
+                    },
+                    {
+                        text: "音乐类",
+                        children: [
+                            { text: "口哨", score: 75 },
+                            { text: "电子琴", score: 75 }
+                        ]
+                    },
+                    { text: "魔术", score: 35 },
+                    { text: "剧本杀", score: 80 },
+                    { text: "狼人杀", score: 60 },
+                    { text: "书法", score: 50 }
+                ]
+            }
+        ]
+    };
+    // 横向思维导图递归渲染，子节点纵向排列
+    function renderTreeHorizontal(node, isRoot = false, vertical = false) {
+        const el = document.createElement('div');
+        el.className = 'node' + (node.main ? ' main' : '') + (node.important ? ' important' : '');
+        el.textContent = node.text;
+        if (node.score !== undefined) {
+            const score = document.createElement('span');
+            score.className = 'score';
+            score.textContent = node.score;
+            el.appendChild(score);
+        }
+        if (node.children && node.children.length > 0) {
+            const childrenEl = document.createElement('div');
+            childrenEl.className = 'children' + (vertical ? ' vertical' : '');
+            node.children.forEach((child, idx) => {
+                const branch = document.createElement('div');
+                branch.className = 'branch';
+                // 只在主节点下的分支画横线
+                if (!isRoot && !vertical) {
+                    const lineH = document.createElement('div');
+                    lineH.className = 'line-h';
+                    lineH.style.width = '40px';
+                    lineH.style.height = '2px';
+                    lineH.style.top = '50%';
+                    lineH.style.left = '-40px';
+                    branch.appendChild(lineH);
+                }
+                // 子节点纵向排列
+                branch.appendChild(renderTreeHorizontal(child, false, true));
+                childrenEl.appendChild(branch);
+            });
+            el.appendChild(childrenEl);
+        }
+        return el;
+    }
+    document.getElementById('skilltree').appendChild(renderTreeHorizontal(skillTree, true));
+    </script>
+</body>
+</html>
