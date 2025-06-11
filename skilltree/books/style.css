@@ -1,0 +1,91 @@
+body {
+    background: #101c2c;
+    color: #e0e6f0;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.bookshelf-container {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 32px 24px 48px 24px;
+    background: rgba(20,32,56,0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #0008;
+}
+.bookshelf-container h1 {
+    text-align: center;
+    color: #7eb6ff;
+    font-size: 2.4em;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+.subtitle {
+    text-align: center;
+    color: #a3c9ff;
+    font-size: 1.1em;
+    margin-top: -18px;
+    margin-bottom: 28px;
+    letter-spacing: 0.04em;
+    opacity: 0.85;
+}
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 24px;
+    justify-content: center;
+    min-height: 120px;
+}
+.book-card {
+    background: linear-gradient(135deg, #1a2a47 60%, #223a5c 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #0005;
+    padding: 24px 20px 18px 20px;
+    min-width: 180px;
+    max-width: 220px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.book-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px #1a2a47cc;
+}
+.book-title {
+    font-size: 1.2em;
+    color: #a3c9ff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.04em;
+}
+.book-comment {
+    color: #b6c6e3;
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 4px;
+}
+.bookshelf-tip {
+    margin-top: 36px;
+    text-align: center;
+    color: #6b8bbd;
+    font-size: 1em;
+    letter-spacing: 0.03em;
+}
+.book-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.book-cover img {
+    width: 90px;
+    height: 128px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px #0006;
+    background: #223a5c;
+}

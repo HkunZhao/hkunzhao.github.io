@@ -1,0 +1,4 @@
+body { background: #101c2c; color: #e0e6f0; font-family: 'Segoe UI', 'Arial', sans-serif; margin: 0; }
+.page-container { max-width: 700px; margin: 40px auto; padding: 32px 24px; background: rgba(20,32,56,0.95); border-radius: 18px; box-shadow: 0 8px 32px #0008; }
+.page-container h1 { text-align: center; color: #7eb6ff; font-size: 2.2em; margin-bottom: 24px; }
+.page-tip { text-align: center; color: #6b8bbd; font-size: 1em; margin-top: 32px; }

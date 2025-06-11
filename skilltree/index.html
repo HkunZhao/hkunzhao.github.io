@@ -16,44 +16,39 @@
             {
                 text: "人",
                 children: [
-                    { text: "书单" }
+                    { text: '<a href="books/" target="_blank">书单</a>' }
                 ]
             },
             {
                 text: "艺",
                 children: [
-                    { text: "看番" },
-                    { text: "小说" },
-                    { text: "剧情游戏" }
+                    { text: '<a href="anime/" target="_blank">看番</a>' },
+                    { text: '<a href="novel/" target="_blank">小说</a>' },
+                    { text: '<a href="storygame/" target="_blank">剧情游戏</a>' }
                 ]
             },
             {
                 text: "技",
                 children: [
-                    { text: "动作类游戏", score: 85 },
-                    { text: "音游", score: 70 },
-                    { text: "信息检索", score: 90 },
+                    { text: '<a href="actiongame/" target="_blank">动作类游戏</a>', score: 85 },
+                    { text: '<a href="musicgame/" target="_blank">音游</a>', score: 70 },
+                    { text: '<a href="search/" target="_blank">信息检索</a>', score: 90 },
                     {
-                        text: "体育类",
+                        text: '体育',
                         children: [
-                            { text: "乒乓球", score: 60 },
-                            { text: "羽毛球", score: 70 },
-                            { text: "空竹", score: 40 },
-                            { text: "呼啦圈", score: 50 },
-                            { text: "足球", score: 20 }
+                            { text: '乒乓球', score: 60 },
+                            { text: '羽毛球', score: 70 },
+                            { text: '空竹', score: 40 },
+                            { text: '呼啦圈', score: 50 },
+                            { text: '足球', score: 20 }
                         ]
                     },
-                    {
-                        text: "音乐类",
-                        children: [
-                            { text: "口哨", score: 75 },
-                            { text: "电子琴", score: 75 }
-                        ]
-                    },
-                    { text: "魔术", score: 35 },
-                    { text: "剧本杀", score: 80 },
-                    { text: "狼人杀", score: 60 },
-                    { text: "书法", score: 50 }
+                    { text: '<a href="whistle/" target="_blank">口哨</a>', score: 75 },
+                    { text: '<a href="piano/" target="_blank">电子琴</a>', score: 75 },
+                    { text: '<a href="magic/" target="_blank">魔术</a>', score: 35 },
+                    { text: '<a href="scriptkill/" target="_blank">剧本杀</a>', score: 80 },
+                    { text: '狼人杀', score: 60 },
+                    { text: '书法', score: 50 }
                 ]
             }
         ]
@@ -62,7 +57,18 @@
     function renderTreeHorizontal(node, isRoot = false, vertical = false) {
         const el = document.createElement('div');
         el.className = 'node' + (node.main ? ' main' : '') + (node.important ? ' important' : '');
-        el.textContent = node.text;
+        // 判断内容是否为 a 标签
+        if (node.text && node.text.startsWith('<a ')) {
+            el.innerHTML = node.text;
+            // 让 a 标签变为白色且无下划线
+            const a = el.querySelector('a');
+            if (a) {
+                a.style.color = '#fff';
+                a.style.textDecoration = 'none';
+            }
+        } else {
+            el.textContent = node.text;
+        }
         if (node.score !== undefined) {
             const score = document.createElement('span');
             score.className = 'score';
