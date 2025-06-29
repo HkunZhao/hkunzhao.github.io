@@ -4,17 +4,52 @@
     <meta charset="UTF-8">
     <title>谧海书屋</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .bookshelf {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px 24px;
+            justify-content: center;
+            min-height: 120px;
+            align-items: stretch; /* 新增，让所有卡片等高 */
+        }
+    </style>
 </head>
 <body>
     <div class="bookshelf-container">
         <h1>谧海书屋</h1>
         <div class="subtitle">——Books from Kun</div>
         <div class="bookshelf">
-            <!-- 示例书籍，可后续添加更多 -->
+            <!-- 六本书籍卡片，每行显示两个 -->
             <div class="book-card">
-                <div class="book-cover"><img src="cover-example.jpg" alt="书名示例封面"></div>
-                <div class="book-title">书名示例</div>
-                <div class="book-comment">这里可以写你的评语...</div>
+                <div class="book-cover"><img src="images/1.png" alt="心流：最佳体验心理学 封面"></div>
+                <div class="book-title">心流：最佳体验心理学</div>
+                <div class="book-comment">“心流”是一种高度专注、沉浸其中的体验，是提升幸福感和效率的科学方法。</div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"><img src="images/2.png" alt="天生不同 封面"></div>
+                <div class="book-title">天生不同</div>
+                <div class="book-comment">每个人都是独特的个体，理解差异，欣赏自我，活出本色。</div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"><img src="images/3.png" alt="思考，快与慢 封面"></div>
+                <div class="book-title">思考，快与慢</div>
+                <div class="book-comment">这里是书3的评语...</div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"><img src="images/1.png" alt="心流：最佳体验心理学 封面"></div>
+                <div class="book-title">心流：最佳体验心理学</div>
+                <div class="book-comment">“心流”是一种高度专注、沉浸其中的体验，是提升幸福感和效率的科学方法。</div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"><img src="images/2.png" alt="书名5封面"></div>
+                <div class="book-title">书名5</div>
+                <div class="book-comment">这里是书5的评语...</div>
+            </div>
+            <div class="book-card">
+                <div class="book-cover"><img src="images/3.png" alt="书名6封面"></div>
+                <div class="book-title">书名6</div>
+                <div class="book-comment">这里是书6的评语...</div>
             </div>
         </div>
         <div class="bookshelf-tip">你可以在此页面添加你看过的书和评语。</div>

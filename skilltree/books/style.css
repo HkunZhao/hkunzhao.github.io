@@ -36,6 +36,7 @@ body {
     gap: 32px 24px;
     justify-content: center;
     min-height: 120px;
+    align-items: stretch; /* 让所有卡片等高 */
 }
 .book-card {
     background: linear-gradient(135deg, #1a2a47 60%, #223a5c 100%);
